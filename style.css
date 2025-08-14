@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(to bottom, white, rgb(184, 216, 228), rgb(149, 210, 234), skyblue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    padding: 20px;
+}
+
+/* Stopwatch Container */
+#stop-Watch {
+    width: 400px;
+    max-width: 100%;
+    background: linear-gradient(135deg, pink, rgb(255, 200, 210));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px 20px;
+    font-size: 2.5rem;
+    color: orange;
+    box-shadow: 0px 4px 20px rgba(199, 118, 199, 0.6);
+    border-radius: 15px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#stop-Watch:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 25px rgba(199, 118, 199, 0.8);
+}
+
+/* Buttons */
+button {
+    padding: 10px 20px;
+    background-color: orange;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: yellow;
+    color: black;
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #stop-Watch {
+        font-size: 2rem;
+        padding: 20px 15px;
+        gap: 20px;
+    }
+
+    button {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #stop-Watch {
+        font-size: 1.5rem;
+        gap: 15px;
+        padding: 15px 10px;
+    }
+
+    button {
+        padding: 6px 12px;
+        font-size: 0.8rem;
+    }
+}
